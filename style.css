@@ -31,7 +31,8 @@ header {
 
 .logo {
   float: left;
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .logo img {
@@ -60,5 +61,53 @@ header nav a {
   text-decoration: underline;
 }
 /* main */
+
+
+/* section mission */
+#mission {
+  background-image: url('/img/img-mission-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 1200px;
+  margin: 69px auto;
+}
+
+article.mission {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  background-color: black;
+}
+
+
+
+/* section featured tea */
+
+#featured-tea {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#featured-tea .header {
+  margin: 20px 0;
+}
+
+.img-box {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.img-box img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
 
 /* footer */
