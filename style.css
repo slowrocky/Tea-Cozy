@@ -13,13 +13,14 @@ html {
   text-align: center;
 }
 
+
  nav a {
   color: seashell;
   text-decoration: underline;
 }
 
 section {
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -68,6 +69,9 @@ header nav a {
 
 /* section mission */
 #mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url('/img/img-mission-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,11 +79,14 @@ header nav a {
   margin: 69px auto 40px auto;
 }
 
-article.mission {
-  position: relative;
-  top: 40%;
-  width: 100%;
+#mission h2, h4 {
+  margin: 15px 0;
+}
+
+#mission .container {
+  width: 1200px;
   background-color: black;
+  border-radius: 20px;
 }
 
 
@@ -87,28 +94,37 @@ article.mission {
 /* section featured tea */
 
 #featured-tea {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 1000px;
+}
+
+#featured-tea h2, h4 {
+  margin: 15px 0;
+}
+
+#featured-tea .container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+flex-grow: 1;
+}
+
+#featured-tea .box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#featured-tea .header {
-  margin: 20px 0;
-}
-
-.img-box {
-  display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 10px 20px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 20px 15px;
 }
 
-.img-box img {
+#featured-tea .box img {
   width: 300px;
   height: 200px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 /* section location */
@@ -117,6 +133,7 @@ article.mission {
   display: flex;
   background-image: url('img/img-locations-background.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   height: 500px;
   justify-content: center;
   align-items: center;
@@ -124,12 +141,12 @@ article.mission {
   margin-top: 40px;
 }
 
-.container {
+#location .container {
   display: flex;
   justify-content: center;
 }
 
-.box {
+#location .box {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -139,11 +156,11 @@ article.mission {
   border-radius: 20px;
 }
 
-.box h3 {
+#location .box h3 {
   margin: 10px 0;
 }
 
-.box span {
+#location .box span {
   margin: 20px 0;
 }
 
